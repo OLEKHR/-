@@ -49,9 +49,9 @@ def check_url(message):
 
 #Калькулятор
 keyboard = telebot.types.InlineKeyboardMarkup()
-keyboard.row(telebot.types.InlineKeyboardButton('/', callback_data='/')
-            telebot.types.InlineKeyboardButton('*', callback_data='*')
-            telebot.types.InlineKeyboardButton('-', callback_data='-')
+keyboard.row(telebot.types.InlineKeyboardButton('/', callback_data='/'),
+            telebot.types.InlineKeyboardButton('*', callback_data='*'),
+            telebot.types.InlineKeyboardButton('-', callback_data='-'),
             telebot.types.InlineKeyboardButton('+', callback_data='+'))
 
 keyboard.row(telebot.types.InlineKeyboardButton('7', callback_data='7'),
