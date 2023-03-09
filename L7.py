@@ -81,7 +81,7 @@ def calc(message):
 
 @bot.callback_query_handler(func=lambda call: True)
 def callback_worker(calc):
-    data = query.data
+    data = calc.data
 
     global value, prev_value
 
